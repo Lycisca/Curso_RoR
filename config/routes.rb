@@ -1,5 +1,5 @@
 Cursofer::Application.routes.draw do
-  resources :courses
+  resources :courses #Da todas las formas de que el navegador llegue al curso, las 7 acciones por defecto.
 
 
   # The priority is based upon order of creation:
@@ -51,7 +51,7 @@ Cursofer::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+    root :to => 'courses#index' #controlador#accion
 
   # See how all your routes lay out with "rake routes"
 
